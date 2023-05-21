@@ -54,7 +54,7 @@ const createCarElement = (carInfo) => {
 
   const image = document.createElement("img");
 
-  image.src = `./assets/images/car/${carInfo.id}.png`;
+  image.src = `./assets/product/images/car/${carInfo.id}.png`;
 
   container.appendChild(image);
 

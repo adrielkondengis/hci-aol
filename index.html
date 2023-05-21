@@ -1,68 +1,51 @@
 <!DOCTYPE html>
-<html lang="en" class="adr-html adr-clear">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles/product/product-base.css" />
-    <link rel="stylesheet" href="./styles/product/product-header.css" />
-    <link rel="stylesheet" href="./styles/product/product-search.css" />
-    <title>Products</title>
+    <link rel="stylesheet" href="styles/home/home.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/ea57a11c1b.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Automotive Car Commercial</title>
   </head>
-  <body class="adr-clear">
-    <nav class="adr-product-navigation">
-      <div class="adr-product-menu">
-        <a
-          class="adr-product-menu-button adr-product-menu-button-default"
-          href="./home.html"
-        >
-          Home
-        </a>
-        <a class="adr-product-menu-button adr-product-menu-button-active">
-          Product
-        </a>
-        <a
-          class="adr-product-menu-button adr-product-menu-button-default"
-          href="./about-us.html"
-        >
-          About Us
-        </a>
-      </div>
-      <div class="adr-product-menu">
-        <a
-          class="adr-product-menu-button adr-product-menu-button-default"
-          href="./login-register.html"
-        >
-          Login / Register
-        </a>
-      </div>
-    </nav>
-    <section class="adr-product-search-container">
-      <div class="adr-product-search-bar-container">
-        <div class="adr-card adr-product-search-bar">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            class="adr-product-search-bar-icon"
-          >
-            <path
-              d="M11 2C15.968 2 20 6.032 20 11C20 15.968 15.968 20 11 20C6.032 20 2 15.968 2 11C2 6.032 6.032 2 11 2ZM11 18C14.8675 18 18 14.8675 18 11C18 7.1325 14.8675 4 11 4C7.1325 4 4 7.1325 4 11C4 14.8675 7.1325 18 11 18ZM19.4853 18.0711L22.3137 20.8995L20.8995 22.3137L18.0711 19.4853L19.4853 18.0711Z"
-            ></path>
-          </svg>
-          <div class="adr-product-search-bar-divider"></div>
-          <input
-            id="adr-product-search-bar-input"
-            placeholder="Search for a car"
-          />
+  <body>
+    <header class="navbar">
+      <nav>
+        <ul class="nav_links">
+          <li><a href="#">Home</a></li>
+          <li><a href="./product.html">Product</a></li>
+          <li><a href="#">About Us</a></li>
+        </ul>
+      </nav>
+      <a class="login" href="./login.html"><button>Login / Register</button></a>
+    </header>
+    <div class="background_page">
+      <div class="title">
+        <h1 class="title-text">Mobil<br />Mobilanku</h1>
+        <div class="quote-container">
+          <div class="quote">
+            "the place where you can find the best car of your choice."
+          </div>
         </div>
       </div>
+    </div>
+    <div class="background_page2"></div>
 
-      <div id="adr-product-listing">
-        <!-- <div id="adr-product-listing-none">
-          <span>Nothing Found...</span>
-        </div> -->
+    <footer class="footer">
+      <div class="contacts">
+        <i class="fa-brands fa-whatsapp fa-xl" style="color: #ffffff"></i>
+        <div class="whatsapp">Whatsapp | 086942069</div>
+        <i class="fa-solid fa-envelope fa-lg"></i>
+        <div class="email">E-mail | mobilmobilan@gmail.com</div>
       </div>
-    </section>
-    <script src="js/product/product-search.js"></script>
+      <div class="copyright">© Copyright 2023. Mobil-mobilan.</div>
+    </footer>
   </body>
 </html>
