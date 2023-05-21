@@ -1,0 +1,53 @@
+.adr-product-navigation {
+  height: 54px;
+  background-color: #414141;
+  display: flex;
+  justify-content: space-between;
+}
+
+.adr-product-menu {
+  display: flex;
+  flex-direction: row;
+}
+
+.adr-product-menu-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-decoration: none;
+
+  user-select: none;
+
+  font-family: PT Sans;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0em;
+  text-align: center;
+
+  box-sizing: border-box;
+  padding-left: 24px;
+  padding-right: 24px;
+
+  outline: none;
+  border: none;
+
+  cursor: pointer;
+}
+
+.adr-product-menu-button-default {
+  background-color: transparent;
+  color: inherit;
+
+  transition: color 250ms, background-color 250ms;
+}
+
+.adr-product-menu-button-default:hover {
+  color: black;
+  background-color: white;
+}
+
+.adr-product-menu-button-active {
+  background-color: white;
+  color: black;
+}

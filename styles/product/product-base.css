@@ -1,0 +1,14 @@
+.adr-clear {
+  margin: 0;
+  padding: 0;
+}
+
+.adr-html {
+  background-color: #1d1d1d;
+  color: white;
+}
+
+.adr-card {
+  background-color: white;
+  box-shadow: -10px 14px 14px 0px #00000080;
+}
