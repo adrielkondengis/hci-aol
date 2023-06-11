@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" class="adr-html adr-clear">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Proza+Libre:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../../styles/product/product-base.css" />
+    <link rel="stylesheet" href="../../../styles/product/payment/order.css" />
+    <link
+      rel="stylesheet"
+      href="../../../styles/product/payment/payment-success.css"
+    />
+    <title>Order</title>
+  </head>
+  <body class="adr-clear">
+    <div class="adr-order-dialog-container">
+      <div class="adr-order-dialog">
+        <span class="adr-order-dialog-title">PAYMENT SUCCESS</span>
+        <img src="../../../assets/product/images/payment/success.png" alt="" />
+        <span id="transaction-id" class="adr-payment-success-transaction-id"
+          >Transaction ID: 12n8dh9aj</span
+        >
+        <span class="adr-payment-success-direction-info"
+          >Press the button below to continue</span
+        >
+      </div>
+      <button
+        class="adr-order-button"
+        onclick='window.open("../../../index.html","_self")'
+      >
+        Back to Homepage
+      </button>
+    </div>
+    <script src="../../../js/product/payment/payment-success.js"></script>
+  </body>
+</html>

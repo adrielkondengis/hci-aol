@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" class="adr-html adr-clear">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Proza+Libre:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../../styles/product/product-base.css" />
+    <link rel="stylesheet" href="../../../styles/product/payment/order.css" />
+    <title>Order</title>
+  </head>
+  <body class="adr-clear">
+    <div class="adr-order-dialog-container">
+      <div class="adr-order-dialog">
+        <span class="adr-order-dialog-title">ORDER REQUEST</span>
+        <div class="adr-order-dialog-field">
+          <span class="adr-order-dialog-field-label">Model</span>
+          <span class="dynamic adr-order-dialog-field-text" data-query="model"
+            >BMW M5</span
+          >
+        </div>
+        <div class="adr-order-dialog-field">
+          <span class="adr-order-dialog-field-label">Year</span>
+          <span class="dynamic adr-order-dialog-field-text" data-query="year"
+            >2012</span
+          >
+        </div>
+        <div class="adr-order-dialog-field">
+          <span class="adr-order-dialog-field-label">Color</span>
+          <span class="dynamic adr-order-dialog-field-text" data-query="color"
+            >Black</span
+          >
+        </div>
+        <div class="adr-order-dialog-field">
+          <span class="adr-order-dialog-field-label">Preferred Contact</span>
+          <div id="select-contact" class="adr-order-dialog-field-select">
+            <span id="select-contact-text">Email</span>
+            <svg
+              width="1024px"
+              height="512px"
+              viewBox="0 0 1024 512"
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+            >
+              <g
+                id="Page-1"
+                stroke="none"
+                stroke-width="1"
+                fill="none"
+                fill-rule="evenodd"
+              >
+                <g
+                  id="icon"
+                  transform="translate(0.000000, -256.000000)"
+                  fill="#000000"
+                  fill-rule="nonzero"
+                >
+                  <g id="Group" transform="translate(0.000000, 256.000000)">
+                    <polygon id="Path" points="512 512 0 0 1024 0"></polygon>
+                  </g>
+                </g>
+              </g>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <button
+        class="adr-order-button"
+        onclick='window.open("./payment-method.html","_self")'
+      >
+        Order
+      </button>
+    </div>
+    <div
+      id="popup-root"
+      style="visibility: hidden"
+      class="adr-order-popup-root"
+    >
+      <div id="popup-backdrop" class="adr-order-popup-backdrop"></div>
+    </div>
+    <script src="../../../js/product/payment/order.js"></script>
+  </body>
+</html>

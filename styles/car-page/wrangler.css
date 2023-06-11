@@ -1,0 +1,230 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: rgb(30, 30, 30);
+  color: white;
+  font-family: "Quicksand", sans-serif;
+}
+
+.adr-product-navigation {
+  height: 54px;
+  background-color: #414141;
+  display: flex;
+  justify-content: space-between;
+}
+
+.adr-product-menu {
+  display: flex;
+  flex-direction: row;
+}
+
+.adr-product-menu-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-decoration: none;
+
+  user-select: none;
+
+  font-family: PT Sans;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0em;
+  text-align: center;
+
+  box-sizing: border-box;
+  padding-left: 24px;
+  padding-right: 24px;
+
+  outline: none;
+  border: none;
+
+  cursor: pointer;
+}
+
+.adr-product-menu-button-default {
+  background-color: transparent;
+  color: inherit;
+
+  transition: color 250ms, background-color 250ms;
+}
+
+.adr-product-menu-button-default:hover {
+  color: black;
+  background-color: white;
+}
+
+.adr-product-menu-button-active {
+  background-color: white;
+  color: black;
+}
+
+.car-image {
+  /* border: 1px solid white; */
+  height: 70vh;
+  position: relative;
+  width: 100%;
+  background-image: url(/assets/product/images/car/ioniq-5-banner.jpg);
+  background-repeat: no-repeat;
+  background-size: 1600px 570px;
+}
+
+.car-name {
+  color: rgb(84, 84, 84);
+  position: absolute;
+  height: 60px;
+  width: 200px;
+  font-size: 50px;
+  font-weight: 900;
+  margin-left: 50px;
+  margin-top: 0px;
+  top: 20px;
+}
+
+.price {
+  position: absolute;
+  right: 60px;
+  bottom: 100px;
+  width: 200px;
+  height: 30px;
+  background-color: rgba(117, 117, 117, 0.374);
+  border: 3px solid white;
+  color: rgb(255, 255, 255);
+}
+
+.order-button {
+  position: absolute;
+  right: 60px;
+  bottom: 20px;
+  width: 200px;
+  height: 60px;
+  background-color: white;
+  color: black;
+  font-weight: 500;
+  font-size: 23px;
+  border: none;
+  box-shadow: -6px 6px 2px 1px rgba(72, 72, 72, 0.434);
+  transition: ease-in-out 0.4s;
+  cursor: pointer;
+}
+
+.order-button:hover {
+  position: absolute;
+  right: 60px;
+  bottom: 20px;
+  width: 200px;
+  height: 60px;
+  background-color: rgb(222, 222, 222);
+  color: black;
+  font-weight: 500;
+  font-size: 23px;
+  border: none;
+  box-shadow: -6px 6px 2px 1px rgba(72, 72, 72, 0.434);
+  cursor: pointer;
+}
+
+.car-desc {
+  position: relative;
+  /* border: 1px solid white; */
+  height: 35vh;
+  width: 100%;
+}
+
+.car-desc-name {
+  display: flex;
+  position: absolute;
+  height: 60px;
+  width: 800px;
+  font-size: 50px;
+  font-weight: 400;
+  margin-left: 50px;
+  margin-top: 0px;
+  top: 40px;
+}
+
+.car-desc-content {
+  position: absolute;
+  text-align: justify;
+  margin-left: 50px;
+  margin-right: 50px;
+  font-size: 18px;
+  top: 120px;
+}
+
+.car-spec {
+  width: 100%;
+  height: 90vh;
+  position: relative;
+}
+
+.spec-title {
+  position: absolute;
+  font-weight: 400;
+  font-size: 50px;
+  left: 50px;
+}
+
+.general {
+  position: absolute;
+  background-color: rgb(86, 86, 86);
+  margin: 140px 0px 40px 50px;
+  width: 360px;
+  height: 460px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: -4px 10px 6px 4px rgba(0, 0, 0, 0.218);
+}
+
+.general > h1 {
+  font-weight: 500;
+}
+
+.general > h2 {
+  font-weight: 400;
+}
+
+.dimensions {
+  position: absolute;
+  background-color: rgb(86, 86, 86);
+  margin: 140px 0px 40px 570px;
+  width: 360px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 460px;
+  box-shadow: -4px 10px 6px 4px rgba(0, 0, 0, 0.218);
+}
+
+.dimensions > h1 {
+  font-weight: 500;
+}
+
+.dimensions > h2 {
+  font-weight: 400;
+}
+
+.engine {
+  position: absolute;
+  background-color: rgb(86, 86, 86);
+  margin: 140px 0px 40px 1100px;
+  width: 360px;
+  height: 460px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: -4px 10px 6px 4px rgba(0, 0, 0, 0.218);
+}
+
+.engine > h1 {
+  font-weight: 500;
+}
+
+.engine > h2 {
+  font-weight: 400;
+}

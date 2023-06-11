@@ -1,7 +1,3 @@
-// constants
-
-const clickLink = "./car-page.html";
-
 // system
 
 const rawData = [
@@ -9,31 +5,37 @@ const rawData = [
     brand: "BMW",
     model: "M5",
     year: "2023",
+    page: "m5",
   },
   {
     brand: "Toyota",
     model: "Avanza",
     year: "2023",
+    page: "avanza",
   },
   {
     brand: "Jeep",
     model: "Wrangler Unlimited",
     year: "2021",
+    page: "wrangler",
   },
   {
     brand: "Honda",
     model: "Mobilio",
     year: "2022",
+    page: "mobilio",
   },
   {
     brand: "Honda",
     model: "Brio",
     year: "2019",
+    page: "brio",
   },
   {
     brand: "Hyundai",
     model: "IONIQ 5",
     year: "2022",
+    page: "ioniq5",
   },
 ];
 
@@ -68,7 +70,7 @@ const createCarElement = (carInfo) => {
 
   info.innerHTML = "Click for details";
 
-  info.href = clickLink;
+  info.href = `./site/product/car/${carInfo["page"]}.html`;
 
   container.appendChild(info);
 
@@ -220,13 +222,7 @@ function parseDatabase(value) {
 }
 
 async function getDatabase() {
-  try {
-    const response = await fetch("./database/car.json");
-
-    data = parseDatabase(await response.json());
-  } catch (error) {
-    data = parseDatabase(rawData);
-  }
+  data = parseDatabase(rawData);
 
   updateList();
 }
